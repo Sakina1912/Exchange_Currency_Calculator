@@ -1,0 +1,116 @@
+:root {
+  --primary-color: rgb(49, 191, 247);
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Roboto Slab', serif;
+}
+
+body .money-logo {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body h1 {
+  color: var(--primary-color);
+  text-align: center;
+}
+
+body p {
+  text-align: center;
+}
+
+body .currency {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 0;
+}
+
+body .currency .fa-chevron-down {
+  position: absolute;
+  top: 55px;
+  left: 45px;
+  font-size: 10px;
+}
+
+body .currency select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 10px 20px 10px 10px;
+  border: 1px solid #dedede;
+}
+
+body .currency input {
+  padding: 10px;
+  text-align: right;
+  font-size: 20px;
+  border: 0;
+}
+
+body .currency select:focus, body .currency input:focus, body .currency btn:focus {
+  outline: 0;
+}
+
+body .swap-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .swap-container .btn {
+  font-size: 15px;
+  background-color: var(--primary-color);
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+}
+
+body .swap-container .btn:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+body .swap-container .rate {
+  color: var(--primary-color);
+  font-weight: bolder;
+}
+
+@media (max-width: 500px) {
+  .currency input {
+    width: 150px;
+    border: 2px solid red;
+  }
+}
+/*# sourceMappingURL=style.css.map */
